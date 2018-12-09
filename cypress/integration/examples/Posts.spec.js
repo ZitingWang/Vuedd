@@ -60,9 +60,4 @@ describe('Manage Posts page', () => {
     // Click confirmation button
     cy.get('tbody').should('contain', 1)
   })
-
-  it('search a post', () => {
-    // Click trash/delete link of 3rd donation in list
-    // cy.get('thead').find('tr:nth-child(2)').find('th:nth-child(3)')
-  })
 })

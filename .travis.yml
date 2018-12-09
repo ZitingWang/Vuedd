@@ -11,3 +11,10 @@ before_script:
 - cd dist && httpserver -p 8080 &
 script:
 - npx cypress run
+deploy:
+  provider: surge
+  skip_cleanup: true
+  domain: webapp-forum.surge.sh
+  project: ./dist
+  on:
+    branch: master
