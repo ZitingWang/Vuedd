@@ -27,7 +27,7 @@ export default {
       columns: ['_id', 'writer', 'likenumber', 'uplike', 'edit', 'delete'],
       options: {
         perPage: 10,
-        filterable: ['writer', 'content', 'likenumber'],
+        filterable: ['writer', 'likenumber'],
         sortable: ['likenumber'],
         headings: {
           _id: 'ID',

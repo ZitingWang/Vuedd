@@ -8,7 +8,7 @@ describe('Post page', () => {
 
   it('allows a valid post to be submitted', () => {
     // Fill out web form
-    cy.get('label').contains('Writer').next().type('BJ')
+    cy.get('label').contains('Writer').next().type('B6J')
     cy.get('label').contains('Content').next().type('shisb')
     cy.contains('Thanks for your Post').should('not.exist')
     cy.get('.error').should('not.exist')
