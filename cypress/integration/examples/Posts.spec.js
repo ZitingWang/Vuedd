@@ -40,4 +40,25 @@ describe('Manage Posts page', () => {
     cy.get('tbody').find('tr:nth-child(2)').find('td:nth-child(1)').click()
     cy.get('div.vue-content').should('not.exist')
   })
+
+  it('allows a post to be edited', () => {
+    cy.get('tbody').find('tr').should('have.length', 5)
+    // Click trash/delete link of 3rd donation in list
+    cy.get('tbody').find('tr:nth-child(3)').find('td:nth-child(6)').click()
+    // Click confirmation button
+    cy.get('label').contains('Writer').next().clear()
+    cy.get('label').contains('Content').next().clear()
+    cy.get('label').contains('Writer').next().type('BJ')
+    cy.get('label').contains('Content').next().type('shisb')
+    cy.get('button').contains('Update').click()
+    cy.contains('Thanks for your Post').should('not.exist')
+  })
+
+  it('up the likenumber of a post', () => {
+    cy.get('tbody').find('tr').should('have.length', 5)
+    // Click trash/delete link of 3rd donation in list
+    cy.get('tbody').find('tr:nth-child(3)').find('td:nth-child(5)').click()
+    // Click confirmation button
+    cy.get('tbody').find('tr:nth-child(3)').find('td:nth-child(6)')
+  })
 })
