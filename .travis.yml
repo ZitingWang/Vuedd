@@ -7,7 +7,14 @@ cache:
    - node_modules
 before_script:
 - npm install -g httpserver
-- npm run custom-build
+- npx run custom-build
 - cd dist && httpserver -p 8080 &
 script:
 - npx cypress run
+deploy:
+  provider: surge
+  skip_cleanup: true
+  domain: your-domain.surge.sh
+  project: ./dist
+  on:
+    branch: master
