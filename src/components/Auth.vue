@@ -1,7 +1,8 @@
 <template>
-  <div>
-    <div id="firebaseui-auth-container"></div>
-  </div>
+    <div class="hero">
+      <h1 class="vue-title">LOGIN</h1>
+      <div id="firebaseui-auth-container"></div>
+    </div>
 </template>
 
 <script>

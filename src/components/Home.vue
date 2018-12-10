@@ -1,19 +1,16 @@
 <template>
   <div class="hero">
-    <h1 class="vue-title">Homer for President !!</h1>
-
+    <h1 class="vue-title">Welcome to my forum!!</h1>
     <table align="center">
       <tr>
         <td>
-          <p class="lead"><b><i>Time for a change !!</i></b>
-          <p>Out with Boring Prumt - Giving has never been so easy.</p>
-          <p>Just click <a href ="/Post">here</a> to go to</p>
+          <p class="lead"><b><i></i></b>
+          <p>Just click <a href ="/Post">here</a> to go to post your post</p>
         </td>
       </tr>
     </table>
-
     <p></p>
-    <p class="lead">This is the homepage of your <b>MEVN</b> Web app</p>
+    <p class="lead">This is the homepage of our Forum</p>
   </div>
 </template>
 

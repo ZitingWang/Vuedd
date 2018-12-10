@@ -4,7 +4,7 @@ describe('Home page', () => {
   })
 
   it('Shows a header', () => {
-    cy.get('.vue-title').should('contain', 'Homer for President !!')
+    cy.get('.vue-title').should('contain', 'Welcome to my forum!!')
   })
 
   describe('Navigation bar', () => {
