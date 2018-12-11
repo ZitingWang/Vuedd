@@ -35,6 +35,7 @@ describe('Manage Posts page', () => {
   it("shows and hides a post's content", () => {
     // Click + symbol of 2nd donation in list
     cy.get('tbody').find('tr:nth-child(2)').find('td:nth-child(1)').click()
+    // cy.get('tbody').find('tr:nth-child(3)').find('td:nth-child(1)').get('vue-content').should('contain', 'The content is [ wobuxiangxie ]')
     // cy.get('div.vue-content').should('contain', 'The content is [ wobuxiangxie ]')
     // Unclick same + symbol
     cy.get('tbody').find('tr:nth-child(2)').find('td:nth-child(1)').click()
