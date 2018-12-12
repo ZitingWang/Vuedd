@@ -4,7 +4,7 @@ describe('Home page', () => {
   })
 
   it('Shows a header', () => {
-    cy.get('.vue-title').should('contain', 'Welcome to my forum!!')
+    cy.get('.vue-title').should('contain', 'Welcome to my webapp!!')
   })
 
   describe('Navigation bar', () => {

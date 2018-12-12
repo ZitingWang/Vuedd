@@ -1,6 +1,6 @@
 <template>
   <div class="hero">
-    <h1 class="vue-title">Welcome to my forum!!</h1>
+    <h1 class="vue-title">Welcome to my webapp!!</h1>
     <table align="center">
       <tr>
         <td>
