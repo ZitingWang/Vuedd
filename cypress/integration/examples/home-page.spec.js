@@ -14,21 +14,12 @@ describe('Home page', () => {
       cy.get('.navbar-nav:nth-child(1)').within(() => {
         cy.get('.nav-item:first').should('contain', 'Home')
         cy.get('.nav-item:nth-child(2)').should('contain', 'Post view')
-        cy.get('.nav-item:nth-child(3)').should('contain', 'Post')
         cy.get('.nav-item:nth-child(4)').should('contain', 'Map')
       })
       cy.get('.navbar-nav:nth-child(2)').within(() => {
         cy.get('.nav-item:first').should('contain', 'About')
         cy.get('.nav-item:nth-child(2)').should('contain', 'Contact')
       })
-    })
-
-    it('Redirects when links are clicked', () => {
-      cy.get('[data-test=postbtn]').click()
-      cy.url().should('include', '/Post')
-      cy.get('.navbar').contains('Post view').click()
-      cy.url().should('include', '/Posts')
-      // etc
     })
   })
 })
