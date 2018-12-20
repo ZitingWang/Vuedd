@@ -2,12 +2,12 @@ import firebase from 'firebase'
 import firebaseui from 'firebaseui'
 
 const config = {
-  apiKey: 'AIzaSyAGRJwhO5_DKJ4xVq8hXv8tB_OXDjyKwF4',
-  authDomain: 'webapp-2ce3f.firebaseapp.com',
-  databaseURL: 'https://webapp-2ce3f.firebaseio.com',
-  projectId: 'webapp-2ce3f',
-  storageBucket: 'webapp-2ce3f.appspot.com',
-  messagingSenderId: '996927180848'
+  apiKey: 'AIzaSyBuySqJyi5rCcCi5sOHreiQ3Qx0sjWnerQ',
+  authDomain: 'webapp-15d9d.firebaseapp.com',
+  databaseURL: 'https://webapp-15d9d.firebaseio.com',
+  projectId: 'webapp-15d9d',
+  storageBucket: 'webapp-15d9d.appspot.com',
+  messagingSenderId: '65247597553'
 }
 
 const auth = {
